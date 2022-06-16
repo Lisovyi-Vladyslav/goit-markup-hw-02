@@ -1,1 +1,89 @@
- 
+ :root {
+     /*шрифти*/
+     --main-font: Roboto, serif;
+     --secondary-font: Raleway, serif;
+     /*колір тексту*/
+     --accent-cl: #2196F3;
+     --main-txt-col: #212121;
+     --secondary-txt-col: #757575;
+     /*фон*/
+     --main-bg-col: #E5E5E5;
+     --secondary-bg-col: #F5F4FA;
+     --dark-bg-col: #2F303A;
+     /*кнопки*/
+     --main-btn-col: #F5F4FA;
+     --blue-bg-btn-col: #2196F3;
+ }
+
+ body {
+     font-family: var(--main-font);
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     background-color: var(--main-bg-col);
+ }
+
+
+ /*силки*/
+ .link {
+     color: var(--main-txt-col);
+     text-decoration: none;
+     font-family: var(--main-font);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 16px;
+     letter-spacing: 0.02em;
+ }
+
+ .link:hover {
+     color: var(--accent-cl);
+ }
+
+ .link:focus {
+     color: var(--accent-cl);
+ }
+
+ /*список*/
+ .list {
+     list-style-type: none;
+ }
+
+ /*кнопки*/
+ .btn {
+     color: var(--main-btn-col);
+ }
+
+ .blue {
+     background-color: var(--blue-bg-btn-col);
+ }
+
+ /*лого*/
+ .logo-blue {
+     color: var(--accent-cl);
+     font-family: var(--secondary-font);
+
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 1.19;
+     letter-spacing: 0.03em;
+ }
+
+ .logo {
+     color: #000000;
+     font-family: var(--secondary-font);
+
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 1.19;
+     letter-spacing: 0.03em;
+ }
+
+ /*заголовки*/
+ .title-hero {
+     color: #FFFFFF;
+ }
+
+ /*фони*/
+ .section-hero {
+     background-color: var(--dark-bg-col);
+ }
