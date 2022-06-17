@@ -7,7 +7,6 @@
      --main-txt-col: #212121;
      --secondary-txt-col: #757575;
      /*фон*/
-     --main-bg-col: #E5E5E5;
      --secondary-bg-col: #F5F4FA;
      --dark-bg-col: #2F303A;
      /*кнопки*/
@@ -17,7 +16,7 @@
 
  body {
      font-family: var(--main-font);
-     background-color: var(--main-bg-col);
+
      color: var(--secondary-txt-col);
  }
 
@@ -39,11 +38,26 @@
  .btn {
      color: var(--main-txt-col);
      background-color: var(--secondary-bg-col);
+     font-family: inherit;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.62;
+     text-align: center;
+     letter-spacing: 0.03em;
 
  }
 
  .btn-hero {
      background-color: var(--hero-bg-btn-col);
+     color: #FFFFFF;
+     font-family: inherit;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.88;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     letter-spacing: 0.06em;
  }
 
  .btn:hover,
@@ -52,15 +66,90 @@
      background: var(--accent-cl);
  }
 
+ /*силки*/
+ .link {
+     color: var(--main-txt-col);
+     text-decoration: none;
+     font-family: var(--main-font);
+     font-weight: 500;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+ }
+
+ .link:hover {
+     color: var(--accent-cl);
+ }
+
+ .link:focus {
+     color: var(--accent-cl);
+ }
+
+ .address {
+     color: var(--secondary-txt-col);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+ }
+
+ .phone {
+     color: var(--secondary-txt-col);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+ }
+
+ .link.footer {
+     color: var(--secondary-txt-col);
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+ }
+
+ .footer:hover,
+ .footer:focus {
+     color: var(--accent-cl);
+ }
+
+ .link-catalog {
+
+     text-decoration: none;
+ }
+
+
+
+ .link-catalog:hover,
+ .link-catalog:focus {
+     color: var(--accent-cl);
+
+ }
+
+ .txt-projects {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.88;
+     letter-spacing: 0.03em;
+     color: var(--secondary-txt-col);
+
+ }
+
+ .link-catalog>.title-projects {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 2.0;
+     letter-spacing: 0.06em;
+     color: var(--main-txt-col);
+ }
+
+
+
  /*лого*/
  .logo-blue {
      color: var(--accent-cl);
-     font-family: var(--secondary-font);
-
-     font-weight: 700;
-     font-size: 26px;
-     line-height: 1.19;
-     letter-spacing: 0.03em;
  }
 
  .logo {
@@ -92,13 +181,6 @@
      background: #F5F4FA;
  }
 
- .section-what-we-do {
-     background: #E5E5E5;
- }
-
- .section-preference {
-     background: #E5E5E5;
- }
 
  .section-hero {
      background: #2F303A;
@@ -110,15 +192,14 @@
 
  /*текст*/
  .txt {
-     font-weight: 400;
+
      font-size: 14px;
      line-height: 1.71;
      letter-spacing: 0.03em;
  }
 
  .txt-post {
-     font-weight: 400;
-     font-size: 16px;
+
      line-height: 1.19;
      text-align: center;
      letter-spacing: 0.03em;
@@ -132,20 +213,8 @@
      color: #FFFFFF;
  }
 
- .txt-projects {
 
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 1.88;
-     letter-spacing: 0.03em;
-     color: var(--secondary-txt-col);
 
- }
-
- .txt-projects:hover,
- .txt-projects:focus {
-     color: var(--accent-cl);
- }
 
 
  /*заголовки*/
@@ -156,6 +225,7 @@
      line-height: 1.36;
      text-align: center;
      letter-spacing: 0.06em;
+     text-transform: uppercase;
  }
 
  .title-preference {
@@ -165,6 +235,7 @@
      line-height: 1.14;
      letter-spacing: 0.03em;
      color: var(--main-txt-col);
+     text-transform: uppercase;
  }
 
  .title-what-we-do {
@@ -205,52 +276,8 @@
      color: var(--main-txt-col);
  }
 
- .title-projects:hover,
- .title-projects:focus {
-     color: var(--accent-cl);
- }
 
 
-
- /*силки*/
- .link {
-     color: var(--main-txt-col);
-     text-decoration: none;
-     font-family: var(--main-font);
-     font-weight: 500;
- }
-
- .link:hover,
- .link:focus {
-     color: var(--accent-cl);
- }
-
-
- .address {
-     color: var(--secondary-txt-col);
-     font-weight: 500;
-     font-size: 14px;
-     line-height: 1.14;
-     letter-spacing: 0.02em;
- }
-
- .phone {
-     color: var(--secondary-txt-col);
-     font-weight: 500;
-     font-size: 14px;
-     line-height: 1.14;
-     letter-spacing: 0.02em;
- }
-
- .link.footer {
-     color: var(--secondary-txt-col);
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.71;
-     letter-spacing: 0.03em;
- }
-
- .footer:hover,
- .footer:focus {
-     color: var(--accent-cl);
+ address {
+     font-style: normal;
  }
